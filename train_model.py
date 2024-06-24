@@ -7,11 +7,12 @@ Created on Mon Jun 24 10:14:02 2024
 
 # train_model.py
 
+
 import re
-#
 import pyarabic.araby as araby
 from pyarabic.araby import strip_tashkeel
 from camel_tools.tokenizers.word import simple_word_tokenize
+import nltk
 from nltk.corpus import stopwords
 from nltk.stem import SnowballStemmer
 
@@ -23,6 +24,10 @@ from imblearn.over_sampling import SMOTE
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.neural_network import MLPClassifier
 from sklearn.model_selection import train_test_split
+
+# Download stopwords if not already available
+nltk.download('stopwords')
+
 
 def process_arabic_text(text):
     """ Processes Arabic text by removing emojis, diacritics, normalizing hamzas,
