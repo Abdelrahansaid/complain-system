@@ -37,6 +37,5 @@ def classify():
     return jsonify({'predicted_label': predicted_label})
 
 if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port)
-
+    # Use 0.0.0.0 as the host to bind to all available interfaces
+    app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 5000)))
