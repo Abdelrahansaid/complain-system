@@ -6,9 +6,8 @@ numpy==2.0.0
 nltk==3.8.1
 pyarabic==0.6.15
 spellchecker==0.4
-camel-tools==1.5.2
+camel-tools==1.2.0
 imblearn==0.0
 seaborn==0.13.2
-matplotlib==3.9.0
 openpyxl==3.1.4
 pyspellchecker==0.8.1
