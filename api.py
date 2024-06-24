@@ -9,6 +9,7 @@ Created on Mon Jun 24 10:14:03 2024
 
 from flask import Flask, request, jsonify
 import joblib
+import os
 from train_model import process_arabic_text, vectorizer, le, mlp
 
 # Load the trained model and other necessary objects
@@ -36,4 +37,6 @@ def classify():
     return jsonify({'predicted_label': predicted_label})
 
 if __name__ == '__main__':
-    app.run()
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
+
