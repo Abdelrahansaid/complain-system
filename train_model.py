@@ -8,7 +8,7 @@ Created on Mon Jun 24 10:14:02 2024
 # train_model.py
 
 import re
-from spellchecker import SpellChecker
+#
 import pyarabic.araby as araby
 from pyarabic.araby import strip_tashkeel
 from camel_tools.tokenizers.word import simple_word_tokenize
@@ -33,15 +33,7 @@ def process_arabic_text(text):
     Returns:
         The corrected Arabic sentence.
     """
-    # Spell correction
-    spell = SpellChecker(language='ar')
-    corrected_sentence = []
-    
-    for word in text.split():
-        corrected_word = spell.correction(word) or word
-        corrected_sentence.append(corrected_word)
-    
-    corrected_text = ' '.join(corrected_sentence)
+   #
     
     # Emoji removal (updated for compatibility)
     emoji_pattern = re.compile(pattern = "["
