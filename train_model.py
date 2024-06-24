@@ -71,10 +71,10 @@ def process_arabic_text(text):
     return stemmed_text
 
 # Read the xlsx file
-df = pd.read_excel('C:\\Users\\Abdelrahman\\Desktop\\chatbot\\complains 2.xlsx')
+df = pd.read_excel('complains 2.xlsx')
 
 # Convert the dataframe to CSV
-df.to_csv('C:\\Users\\Abdelrahman\\Desktop\\chatbot\\complains 2.csv', index=False)
+df.to_csv('complains 2.csv', index=False)
 
 # Label Encoding
 le = LabelEncoder()
