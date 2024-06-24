@@ -9,7 +9,7 @@ Created on Mon Jun 24 10:14:03 2024
 
 from flask import Flask, request, jsonify
 import joblib
-from train_model import process_arabic_text, classify_complaint, vectorizer, le, mlp
+from train_model import process_arabic_text, vectorizer, le, mlp
 
 # Load the trained model and other necessary objects
 mlp = joblib.load('saved_model.pkl')
