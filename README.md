@@ -95,7 +95,8 @@ Example response:
 ## Author
 
 Abdelrahman Said Mohamed
-ww.linkedin.com/in/abdelrahman-said-mohamed-96b832234
+
+www.linkedin.com/in/abdelrahman-said-mohamed-96b832234
 
 ## License
 
