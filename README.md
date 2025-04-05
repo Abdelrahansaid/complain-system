@@ -16,7 +16,7 @@ A machine learning system for classifying Arabic complaints using text processin
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/arabic-complaint-classification.git
+git clone https://github.com/Abdelrahansaid/arabic-complaint-classification.git
 ```
 
 2. Install dependencies:
@@ -101,17 +101,3 @@ www.linkedin.com/in/abdelrahman-said-mohamed-96b832234
 ## License
 
 [MIT](LICENSE)
-```
-
-This README includes:
-1. Clear project description
-2. Installation instructions
-3. Usage examples
-4. Technical details
-5. API documentation
-6. File structure
-
-You can copy and paste this directly into your repository's README.md file. Just replace:
-- The GitHub URL with your actual repository URL
-- Update the author name if needed
-- Add any additional details specific to your deployment
